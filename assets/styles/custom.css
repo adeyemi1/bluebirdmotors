@@ -8,16 +8,16 @@ body {
   padding-top: 0px;
   padding-bottom: 40px;
   margin-top: 0px;
-  border-top: 1px solid #eee;
-  background-color: #224285;
+  /*border-top: 1px solid #eee;*/
+  background-color: #D0C86C;
+  height: 200px;
 }
-.blue-car{
-    background-image: url(../images/BlueBrand.png);
-    background-position: 0% 25%;
-    background-size: cover;
-    color: gold;
-    height: 600px;
-    background-repeat: no-repeat;
+.blue-car img{
+   width: 100%
+}
+.blue-car p {
+  padding: 0px;
+  margin:0px;
 }
 
 /* Main marketing message and sign up button */
@@ -37,7 +37,6 @@ body {
 .nav-justified {
   background-color: #eee;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 .nav-justified > li > a {
   padding-top: 15px;
@@ -58,7 +57,7 @@ body {
 .nav-justified > .active > a,
 .nav-justified > .active > a:hover,
 .nav-justified > .active > a:focus {
-  background-color: #ddd;
+  background-color: #F6E497;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
           box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
@@ -74,6 +73,7 @@ body {
   background-color: #0A090A;
   padding-top: 0px;
   margin-top: 0px; 
+  margin-bottom: 0px;
 }
 .services h2 {
   padding: 0;
@@ -93,18 +93,28 @@ body {
   margin-bottom: 5px;
 }
 .services li a {
-  /*border: 1px solid #FFFFFF;
-  text-align: center;
-  background-color: #0A090A;*/
   color: #FFFFFF;
   font: bold 18px/36px 'Tahoma' !important;
 }
 .services .row{
   margin-top: 40px;
 }
-.container{
+.container-fluid{
   width: 100%;
+  overflow: auto;
+  padding: 0px;
+  margin:0px;
 }
+footer .sitemap {
+  float: right;
+  width: 285px;
+/*  top:30px;*/
+}
+footer .left{
+  float: left;
+  width: 570px;
+}
+
 @media (min-width: 768px) {
   .nav-justified {
     max-height: 52px;

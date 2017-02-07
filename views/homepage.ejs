@@ -1,8 +1,7 @@
-<div class="container-fluid">
-
-   <div class="blue-car">
-   <p><img class="img-responsive" src="../images/BlueBrand.png"></p>
-   </div>
+<div class="container-fluid" data-ng-controller="homeController">
+	<div class="blue-car">
+		<p><img class="img-responsive" src="../images/BlueBrand.png"></p>
+	</div>
 	<!-- Jumbotron -->
 	<div class="jumbotron">
 		<h1>Fix your car with us</h1>
@@ -12,34 +11,11 @@
 	<!-- Example row of columns -->
 	<div class="services">
 		<h2>Services</h2>
-		<div class="row">
-			<div class="col-xs-6 col-md-4">
+		<div class="row" >
+			<div class="col-xs-6 col-md-4" data-ng-repeat="services in chunkServices" >
 				<ul class="list-group">
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
+					<li class="list-group-item" data-ng-repeat="service in services"><a href="#">{{ service.name }}</a></li>
 				</ul>
-			</div>
-			<div class="col-xs-6 col-md-4">
-				<ul class="list-group">
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-md-4">
-				<ul class="list-group">
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-					<li class="list-group-item"><a href="#">Oil changing</a></li>
-				</ul>
-			</div>
+			</div>			
 		</div>
-		
 	</div>

@@ -9,7 +9,7 @@ body {
   padding-bottom: 40px;
   margin-top: 0px;
   /*border-top: 1px solid #eee;*/
-  background-color: #D0C86C;
+  background-color: #C1C3C7;
   height: 200px;
 }
 .blue-car img{
@@ -70,7 +70,7 @@ body {
   border-radius: 0 0 5px 5px;
 }
 .services{
-  background-color: #0A090A;
+  background-color:#4E7AC7;
   padding-top: 0px;
   margin-top: 0px; 
   margin-bottom: 0px;
@@ -88,7 +88,7 @@ body {
 .services li {
   border: 1px solid #FFFFFF;
   text-align: center;
-  background-color: #0A090A;
+  background-color: #192432;
   color: #FFFFFF;
   margin-bottom: 5px;
 }
@@ -105,10 +105,18 @@ body {
   padding: 0px;
   margin:0px;
 }
+
 footer .sitemap {
   float: right;
   width: 285px;
 /*  top:30px;*/
+
+}
+.unstyled ul
+{
+  list-style-type: none;
+  margin-right: 0;
+  padding: 0;
 }
 footer .left{
   float: left;

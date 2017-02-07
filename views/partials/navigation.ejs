@@ -1,13 +1,13 @@
 <!-- The justified navigation menu is meant for single line per list item.
 Multiple lines will require custom code not provided by Bootstrap. -->
-<div class="masthead">
+<div class="masthead" ng-controller="homeController">
   <nav>
     <ul class="nav nav-justified">
-      <li class="active"><a href="#">Home</a></li>
-   <!--    <li class="active"><a href="#">Who we are</a></li>-->
-      <li><a href="#">Services</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li ng-class="{ active : isActive('/')}"><a href="/">Home</a></li>
+    <!--  <li class="active"><a href="#">Who we are</a></li>-->
+      <li ng-class="{ active : isActive('/services')}"><a  href="/services">Services</a></li>
+      <li ng-class="{ active : isActive('/faq')}"><a  href="/faq">FAQ</a></li>
+      <li ng-class="{ active : isActive('/contact')}"><a  href="/contact">Contact Us</a></li>
     </ul>
   </nav>
 </div>

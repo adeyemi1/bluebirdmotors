@@ -1,4 +1,4 @@
-angular.module('home.controller', []).controller('homeController', ['$scope', '$http', function($scope, $http) {
+angular.module('home.controller', []).controller('homeController', ['$scope', '$http','$location', function($scope, $http,$location) {
     $scope.services;
 
 
@@ -32,6 +32,11 @@ angular.module('home.controller', []).controller('homeController', ['$scope', '$
             newArr.push(arr.slice(i, i + size));
         }
         return newArr;
+    }
+
+   $scope.isActive = function(viewLocation){ 
+     let active = ('http://localhost:1337' +viewLocation === $location.absUrl());
+     return active;
     }
 
 }]);

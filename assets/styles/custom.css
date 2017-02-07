@@ -112,6 +112,10 @@ footer .sitemap {
 /*  top:30px;*/
 
 }
+
+footer .left {
+  margin-left: 20px;
+}
 .unstyled ul
 {
   list-style-type: none;

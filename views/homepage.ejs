@@ -11,11 +11,17 @@
 	<!-- Example row of columns -->
 	<div class="services">
 		<h2>Services</h2>
-		<div class="row" >
+		<div class="row">
 			<div class="col-xs-6 col-md-4" data-ng-repeat="services in chunkServices" >
 				<ul class="list-group">
 					<li class="list-group-item" data-ng-repeat="service in services"><a href="#">{{ service.name }}</a></li>
 				</ul>
-			</div>			
-		</div>
+			</div>
+			<div class="col-xs-12 col-md-12">
+				<ul class="list-group  more">
+					<li class="list-group-item"><a href="#">And More...</a></li>
+				</ul>
+			</div>
+		</div>	
 	</div>
+</div>

@@ -105,6 +105,12 @@ body {
   padding: 0px;
   margin:0px;
 }
+.more
+{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
 
 footer .sitemap {
   float: right;

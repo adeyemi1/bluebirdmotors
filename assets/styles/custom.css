@@ -20,6 +20,12 @@ body {
   margin:0px;
 }
 
+.deep-blue {
+  background-color: #192432;  
+}
+.deep-blue label{
+  color: #FFFFFF;
+}
 /* Main marketing message and sign up button */
 .jumbotron {
     margin-bottom: 0px;
@@ -70,16 +76,17 @@ body {
   border-radius: 0 0 5px 5px;
 }
 .services{
-  background-color:#4E7AC7;
   padding-top: 0px;
   margin-top: 0px; 
   margin-bottom: 20px;
+}
+.blue-bird-container{
+  background-color:#4E7AC7;
 }
 .services h2 {
   padding: 0;
   margin: 0;
   border: 0;
-  color: #FFFFFF;
   position: relative;
   top: 10px;
   text-align: center;
@@ -88,8 +95,7 @@ body {
 .services li {
   border: 1px solid #FFFFFF;
   text-align: center;
-  background-color: #192432;
-  color: #FFFFFF;
+
   margin-bottom: 5px;
   padding: 0;
 }

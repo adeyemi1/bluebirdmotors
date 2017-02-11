@@ -1,1 +1,39 @@
-<h1>contact us</h1>
+<div data-ng-controller="contactController" class="blue-bird-container ">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			
+			<form id="contact" action="" method="post" class="deep-blue contact-form" name="contactForm">
+				<h4>Contact us Today</h4>
+				<fieldset>
+					<label for="name">Your Name</label>
+					<input placeholder="Your name" type="text" tabindex="1" required  ng-model="contact.name"autofocus>
+				</fieldset>
+				<fieldset>
+					<label for="email">Your email</label>
+					<input placeholder="Your Email Address" type="email" tabindex="2" ng-model="contact.email"required>
+				</fieldset>
+				<fieldset>
+					<label for="tel">Your Phone Number</label>
+					<input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" ng-model="contact.phone" required>
+				</fieldset>
+				<fieldset>
+					<label for="subject">Subject</label>
+					<select type="subject" size="subjects.length" name="subject" data-ng-model="contact.subject">
+						<option value="">Select subject</option>
+						<option class="center" data-ng-repeat="subject in subjects" ng-value="subject.id">{{ subject.name }}</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<label for="message">Your Message</label>
+					<textarea placeholder="Type your message here...." tabindex="5" type="message" ng-model="contact.message"required></textarea>
+				</fieldset>
+				<fieldset>
+					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending" data-ng-click="sendMessage(contact)" data-ng-disabled="myForm.$invalid">Send message</button>
+				</fieldset>
+			</form>
+		</div>
+		<div class="col-xs-12 col-md-6">
+		</div>
+		
+	</div>
+</div>

@@ -1,3 +1,4 @@
 var blueBirdApp = angular.module("blueBirdApp", [
-    'home.controller'
+    'home.controller',
+    'contact.controller'
 ]);

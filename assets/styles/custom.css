@@ -23,7 +23,7 @@ body {
 .deep-blue {
   background-color: #192432;  
 }
-.deep-blue label{
+.deep-blue label li {
   color: #FFFFFF;
 }
 /* Main marketing message and sign up button */

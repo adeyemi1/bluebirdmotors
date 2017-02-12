@@ -1,13 +1,30 @@
-<h1>services</h1>
-<!-- Jumbotron -->
-<div class="jumbotron">
-	<h1>Fix your car with us</h1>
-	<p class="lead">We offer various types of services for your car, from basic oil replacement to a more complicated issues, like changing of car engines. Contact us today for any issue your car may be experiencing. We also offer free car diagnose.</p>
-	<p><a class="btn btn-lg btn-success" href="#" role="button">Call us now</a>  <b>+4407926117077</b></p>
-</div>
-<!-- Jumbotron -->
-<div class="jumbotron">
-	<h1>Fix your car with us</h1>
-	<p class="lead">We offer various types of services for your car, from basic oil replacement to a more complicated issues, like changing of car engines. Contact us today for any issue your car may be experiencing. We also offer free car diagnose.</p>
-	<p><a class="btn btn-lg btn-success" href="#" role="button">Call us now</a>  <b>+4407926117077</b></p>
-</div>
+<section>
+	<div class="row" data-ng-controller="serviceController">
+		<div class="col-xs-12 col-md-8">
+			<h1>The services we offer</h1>
+			<p>To keep your vehicle running properly at all times, we offer a number of services in the Ontario, CA 91762 area that are carried out by our certified, expert auto service and repair technicians who have years of experience performing everything from oil changes to a complete engine overhaul. </p>
+			<p>We use high-tech diagnostic equipment to guarantee your vehicle is repaired and/or serviced correctly the first time around, and we only use the highest quality replacement parts, filters, oils, and components when it comes to your car.</p>
+			<p>Our services include:</p>
+			<ul>
+				<li data-ng-repeat="service in services">{{ service.name }}</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<div class="working-hours deep-blue">
+				<h3> <span class="glyphicon glyphicon-time"></span>Working Hours</h3>
+				<ul class="deep-blue">
+					<li>Monday 8:00AM - 5:00PM</li>
+					<li>Tuesday 8:00AM - 5:00PM</li>
+					<li>Wednesday 8:00AM - 5:00PM</li>
+					<li>Thursday 8:00AM - 5:00PM</li>
+					<li>Friday 8:00AM - 5:00PM</li>
+					<li>Saturday 8:00AM - 5:00PM</li>
+					<li>Sunday closed</li>
+				</ul>
+			</div>
+			<div class="location">
+				<img src="/images/bluebird_industrial_estate1.jpg">
+			</div>
+		</div>
+	</div>
+</section>

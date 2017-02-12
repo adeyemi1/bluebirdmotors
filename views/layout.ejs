@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/map.css">
     <!--STYLES END-->
   </head>
 
@@ -123,7 +124,23 @@
     <script src="/js/dependencies/AngularJS/app/app.module.js"></script>
     <script src="/js/dependencies/AngularJS/app/controllers/ContactController.js"></script>
     <script src="/js/dependencies/AngularJS/app/controllers/homeController.js"></script>
+    <script src="/js/dependencies/AngularJS/app/controllers/ServiceController.js"></script>
     <!--SCRIPTS END-->
-
+  <script>
+      function initMap() {
+        var uluru = {lat: 52.5997341, lng: -2.1129768000000695};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpjCJp9ZTv6PuoRu1eCuh_LFWX1b1qQQ&callback=initMap">
+    </script>
   </body>
 </html>
